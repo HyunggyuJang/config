@@ -66,6 +66,7 @@
 
 #navigator-toolbox #nav-bar {
     box-shadow: none !important;
+    border-left: 0px !important;
 }
 
 #navigator-toolbox #pageActionButton {
@@ -209,9 +210,8 @@
 #navigator-toolbox > #nav-bar{
     margin-right:calc(100vw - var(--uc-navigationbar-width));
     margin-top: calc(0px - var(--uc-toolbar-height));
+    border-top: 0px !important;
 }
-
-#nav-bar { border-top: 0px !important }
 
 /* Zero window drag space  */
 :root[tabsintitlebar="true"] #nav-bar{ padding-left: 0px !important; padding-right: 0px !important; }
