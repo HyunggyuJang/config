@@ -27,6 +27,10 @@
 		       #_d7742d87-e61d-4b78-b8a1-b469842139fa_-browser-action, /* Vimium */
 		       #ublock0_raymondhill_net-browser-action) { display: none !important; }
 
+#unified-extensions-button {
+    margin-right: 5px !important;
+}
+
 /*
  *  Minimal theme
  */
@@ -44,7 +48,7 @@
 }
 
 .tab-background{
-	padding-bottom: 0 !important;
+	margin: 0 !important;
 }
 
 #navigator-toolbox #urlbar-container {
@@ -66,7 +70,6 @@
 
 #navigator-toolbox #nav-bar {
     box-shadow: none !important;
-    border-left: 0px !important;
 }
 
 #navigator-toolbox #pageActionButton {
@@ -190,9 +193,8 @@
     #urlbar-container{ min-width:unset !important }
 }
 
-#TabsToolbar{ margin-left: var(--uc-navigationbar-width); }
-/* #tabbrowser-tabs{ --tab-min-height: var(--uc-toolbar-height) !important; } */
-#tabbrowser-tabs{ --tab-min-height: var(--uc-toolbar-height) !important; }
+#TabsToolbar{ margin-left: calc(var(--uc-navigationbar-width) - 6px); }
+#tabbrowser-tabs{ border: none !important; }
 
 /* Hide Tab bar with only one Tab - [110] */
 #tabbrowser-tabs .tabbrowser-tab:only-of-type,
@@ -210,7 +212,6 @@
 #navigator-toolbox > #nav-bar{
     margin-right:calc(100vw - var(--uc-navigationbar-width));
     margin-top: calc(0px - var(--uc-toolbar-height));
-    border-top: 0px !important;
 }
 
 /* Zero window drag space  */
