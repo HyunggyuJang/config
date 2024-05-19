@@ -24,11 +24,14 @@
 		       #save-to-pocket-button,
 		       #permissions-granted-icon,
 		       #fxa-toolbar-menu-button,
-		       #_d7742d87-e61d-4b78-b8a1-b469842139fa_-browser-action, /* Vimium */
 		       #ublock0_raymondhill_net-browser-action) { display: none !important; }
 
-#unified-extensions-button {
-    margin-right: 5px !important;
+#unified-extensions-button{
+    width: 2px !important;
+    padding-inline: 0 !important
+}
+#unified-extensions-button > .toolbarbutton-icon {
+    width: 0 !important;
 }
 
 /*
